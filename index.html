@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+
+    <!-----frameworks css link------->
+    <link rel="stylesheet" href="assets/frameworks/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/frameworks/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/frameworks/fullPage.js-master/dist/fullpage.min.css">
+
+
+    <!-----main css link------->
+    <link rel="stylesheet" href="assets/vandor/scss/template.css">
+    <link rel="stylesheet" href="assets/vandor/responsive/responsive.css">
+    <!---google font-->
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+    <!-----Main html scetion---->
+
+    <main>
+
+
+
+        <!------Template navbar------>
+        <div id="templateNavbar" class="template-navbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap justify-content-start align-items-center">
+                        <div class="elements">
+                            <div class="template-logo">
+                                <a href="#">
+                                    <img src="assets/vandor/images/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <ul class="d-flex flex-wrap justify-content-between align-items-center">
+                                <li>+7 325 653 23 37</li>
+                                <li class="ms-3">Denzel.design@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div class="template-sidebar">
+                            <div id="mySidenav" class="sidenav">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <a href="#">About</a>
+                                <a href="#">Services</a>
+                                <a href="#">Clients</a>
+                                <a href="#">Contact</a>
+                            </div>
+                            <span style="font-size:30px;cursor:pointer;z-index: 111;" onclick="openNav()">&#9776;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---section one---->
+        <div id="fullpage">
+            <div class="section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-8 col-md-8 col-sm-8 col-12 p-0">
+                            <div id="templateBanner" class="template-banner">
+                                <div class="inner">
+                                    <h1 class="title">Lorem ipsum dolor sit amet.</h1>
+                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis? Odio, quis!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-md-4 col-sm-4 col-4 p-0">
+                            <div id="templateSidebar" class="template-sidebar">
+                                <div class="inner">
+                                    <p>sidebar</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="section">
+
+            </div>
+            <div class="section">Some section</div>
+
+        </div>
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--====Main javascript link=====-->
+    <script src="assets/vandor/jquary/jquary.js"></script>
+    <script src="assets/template/jquary.js"></script>
+    <script src="assets/vandor/jquary/main.js"></script>
+    <!--====Main javascript link=====-->
+    <script src="assets/frameworks/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="assets/frameworks/fontawesome-free-6.2.0-web/js/all.min.js"></script>
+    <script src=".fullpage/dropEffect.min.js"></script>
+    <script src="assets/frameworks/fullPage.js-master/dist/fullpage.min.js"></script>
+
+
+
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true,
+            navigation: true,
+            anchors: ['section1', 'section2', 'section3'],
+            navigationTooltips: ['home', 'about us', 'contact', 'service'],
+            navigationTooltips: true,
+
+        });
+    </script>
+
+
+</body>
+
+</html>
